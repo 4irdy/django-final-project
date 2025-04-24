@@ -20,4 +20,5 @@ from django.urls import path, include  # Add 'include' to import app URLs
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('portfolio.urls')),  # Include the URLs for the portfolio app
+    path('contact/', views.contact_view, name='contact'),
 ]
